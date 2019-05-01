@@ -1,0 +1,40 @@
+/* HeroDetailComponent's private CSS styles */
+  .heroInfo {
+    font-family: Arial;
+    width: 125px;
+    /* height: 160px; */
+    border: 2px solid darkgrey;
+    background-color: #eee;
+  }
+  h2 {
+    font-family: Arial;
+    font-size: medium;
+    text-align: center; 
+    font-weight: bold;
+  }
+  .heroPlanet {
+    font-family: Arial;
+    font-size: x-small;
+    font-weight: bold;
+  }
+  .heroDescription {
+    font-family: Arial;
+    font-size: xx-small;
+  }
+  .imageHide {
+    display: none;
+    object-fit: cover;
+    width: 125px;
+    height: 160px;
+  }
+  .imageShow {
+    display: block;
+    object-fit: cover;
+    width: 125px;
+    height: 160px;
+  }
+  .module:hover {
+    cursor: pointer;
+    transform: scale(1.3);
+  }
+  
