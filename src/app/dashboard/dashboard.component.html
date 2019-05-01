@@ -1,0 +1,35 @@
+<div class="container">
+  <div class="gridTop">
+    <!-- <a *ngFor="let hero of heroesTop" class="module"
+        routerLink="/detail/{{hero.id}}"> -->
+        <app-hero-detail *ngFor="let hero of heroesTop" 
+            [hero]="hero" [showImage]="true">
+        </app-hero-detail>
+      <!-- <img class="image" src="assets/{{hero.image}}"/> -->
+      <!-- </a> -->
+  </div>
+  <div class="gridRight">
+      <app-hero-detail *ngFor="let hero of heroesRight" 
+      [hero]="hero" [showImage]="true">
+    </app-hero-detail>
+  </div>
+  <div class="gridBottom">
+      <app-hero-detail *ngFor="let hero of heroesBottom" 
+      [hero]="hero" [showImage]="true">
+    </app-hero-detail>
+  </div>
+  <div class="gridLeft">
+      <app-hero-detail *ngFor="let hero of heroesLeft" 
+      [hero]="hero" [showImage]="true">
+    </app-hero-detail>
+  </div>
+  <div class="gridCenter">
+      <a *ngFor="let evil of badass" class="evilman"
+          routerLink="/detail/{{evil.id}}">
+        <div>
+          <img class="image" src="assets/{{evil.image}}"/>
+        </div>
+      </a>
+  </div>
+</div>
+<app-hero-search></app-hero-search>
